@@ -33,11 +33,8 @@ export default function WeatherSearch() {
       <input type="search" placeholder="Enter a city.." onChange={updateCity} />
       <button type="Submit">Search</button>
       <p>
-        This website was coded by Svitlana Kondratieva, and is
-        <a
-          href="https://github.com/skondratieva88/weather-react"
-          target="_blank"
-        >
+        This website was coded by Svitlana Kondratieva, and is{" "}
+        <a href="https://github.com/skondratieva88/weather-react">
           open-sourced
         </a>
       </p>
@@ -52,7 +49,7 @@ export default function WeatherSearch() {
           <li>Temperature: {Math.round(weather.temperature)}°C</li>
           <li>Description: {weather.description}</li>
           <li>Humidity: {weather.humidity}%</li>
-          <li>Wind : {Math.round(weather.wind)} km/h</li>
+          <li>Wind: {Math.round(weather.wind)} km/h</li>
           <li>
             <img src={weather.icon} alt={weather.description} />
           </li>
